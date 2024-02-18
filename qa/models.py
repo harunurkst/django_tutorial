@@ -6,3 +6,6 @@ class Question(models.Model):
     created_at = models.DateTimeField()
     view_count = models.IntegerField()
     point_count = models.IntegerField()
+
+    def __str__(self):
+        return self.title
